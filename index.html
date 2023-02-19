@@ -6,10 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styless.css">
-    <title>Document</title>
+    <title>Products</title>
 </head>
 
 <body>
+    <header class="header">
+        <img src="./ASSET/icon-menu.svg" alt="Menu hamburguesa" class="header__img">
+        <img src="./ASSET/logo.svg" alt="logo" class="header__img">
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <!--! PENDIENTE LINKEAR LOS ENLACES-->
+                <li class="navbar__item"><a class="link" href="#">Collections</a></li>
+                <li class="navbar__item"><a class="link" href="#">Men</a></li>
+                <li class="navbar__item"><a class="link" href="#">Women</a></li>
+                <li class="navbar__item"><a class="link" href="#">About</a></li>
+                <li class="navbar__item"><a class="link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="modal__navbar__full">
+            <nav class="modal__navbar">
+                <ul class="modal__navbar__items">
+                    <img src="./ASSET/icon-close.svg" alt="Close" class="header__img">
+                    <!--! PENDIENTE LINKEAR LOS ENLACES-->
+                    <li class="modal__navbar__item"><a class="link" href="#">Collections</a></li>
+                    <li class="modal__navbar__item"><a class="link" href="#">Men</a></li>
+                    <li class="modal__navbar__item"><a class="link" href="#">Women</a></li>
+                    <li class="modal__navbar__item"><a class="link" href="#">About</a></li>
+                    <li class="modal__navbar__item"><a class="link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__cart-avatar">
+            <div class="header__cart">
+                <div class="header__notification"></div>
+                <img src="./ASSET/icon-cart.svg" alt="Shopping Cart">
+            </div>
+            <img src="./ASSET/image-avatar.png" alt="avatar">
+        </div>
+    </header>
+    <main class="main_container">
+        <section class="search__box">
+            <div class="filters">
+                <select name="filters" id="filters">
+                    <option value="">Precio : Menor a Mayor</option>
+                    <option value="">Precio : Mayor a Menor</option>
+                </select>
+                <div class="search"></div>
+            </div>
+            <div class="filters__container">
+                <div class="categori">
+                    <p class="categori__tittle">Filtrar por: </p>
+                    <ul class="categori_list">
+                        <li class="item">Nike</li>
+                        <li class="item">Adidas</li>
+                        <li class="item">Puma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./main.js"></script>
 </body>
 

@@ -1,0 +1,31 @@
+{
+  "name": "tercera-preentrega",
+  "version": "1.0.0",
+  "description": "E-comerce",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J4ckson95/TerceraPreentregaLopez.git"
+  },
+  "keywords": [
+    "js",
+    "HTML",
+    "CSS",
+    "SASS",
+    "E-COMERCE",
+    "CODERHOUSE"
+  ],
+  "author": "Jason Anders Lopez Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J4ckson95/TerceraPreentregaLopez/issues"
+  },
+  "homepage": "https://github.com/J4ckson95/TerceraPreentregaLopez#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
