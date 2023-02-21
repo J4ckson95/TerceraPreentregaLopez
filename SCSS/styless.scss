@@ -1,0 +1,135 @@
+@import "variables";
+
+body{
+    position: relative;
+    width: 375px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width:1440px) {
+        width: 1440px;
+    }
+}
+header{
+    @include flex (center, space-between);
+    height: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media  screen and (min-width: 1440px) {
+        height: 112px;
+        border-bottom: 2.5px solid $Grayish_blue;
+    }
+    .header__navigation{
+        @include flex (center, space-between);
+        width: 175px;
+        height: 100%;
+        //border: 1px solid red;
+        @media screen and (min-width: 1440px) {
+            width: 590px;
+            margin-left: 45px;
+        }
+        .header__menu {
+            margin-right: 8px;
+            &:hover {
+                cursor: pointer;
+            }
+            @media screen and (min-width: 1440px) {
+                display: none;
+            }
+        }
+    }
+    .header__cart-avatar{
+        @include flex (center, space-around);
+        width: 70px;
+        .carts{
+            position: relative;
+            .header__notification {
+                display: none;
+                position: absolute;
+                top: -10px;
+                right: -5px;
+                width: 15px;
+                height: 12px;
+                text-align: center;
+                font-size: .6em;
+                background-color: $Orange;
+                border-radius: 16px;
+                color: $White;
+                @media screen and (min-width: 1440px) {
+                    font-size: 12px;
+                }
+            }
+            .header__cart {
+                width: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+                @media screen and (min-width: 1440px) {
+                    width: 25px;
+                }
+            }
+        }
+        .header__avatar {
+            width: 20px;
+            &:hover {
+                cursor: pointer;
+                border: 2px solid $Orange;
+                border-radius: 50%;
+            }
+        }
+        @media screen and (min-width: 1440px) {
+            width: 125px;
+            .header__avatar{
+                width: 40px;
+            }
+        }
+    }
+    .modal__navbar{
+        &__background{
+            @include modal;
+        }
+        width: 250px;
+        height: 100%;
+        background-color: $White;
+        .modal__img__close{
+            width: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &__list{
+            height: 200px;
+            @include flex (start, space-between);
+            flex-direction: column;
+            a{
+                color: $Very_dark_blue;
+                font-weight: 700;
+                font-size: 1.1em;
+            }
+        }
+    }
+    .navbar {
+        display: none;
+        width: 400px;
+        &__list{
+            @include flex(center, space-between);
+            .list__item{
+                padding-top:42px ;
+                height: 112px;
+                display: block;
+                &:hover{
+                    cursor: pointer;
+                    border-bottom: 4px solid $Orange;
+                }
+                .link{
+                    color: $Dark_grayish_blue;
+                }
+            }
+        }
+        @media screen and (min-width: 1440px) {
+            display: block;
+        }
+    }
+}
