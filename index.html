@@ -25,7 +25,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="modal__navbar__background">
+        <div class="modal__navbar__background" id="modal_navbar">
             <nav class="modal__navbar">
                 <img src="./ASSET/icon-close.svg" alt="Close" class="modal__img__close">
                 <ul class="modal__navbar__list">
@@ -46,27 +46,152 @@
             <img src="./ASSET/image-avatar.png" alt="avatar" class="header__avatar">
         </div>
     </header>
-    <!--<main class="main_container">
-        <section class="search__box">
-            <div class="filters">
-                <select name="filters" id="filters">
-                    <option value="">Precio : Menor a Mayor</option>
-                    <option value="">Precio : Mayor a Menor</option>
-                </select>
-                <div class="search"></div>
-            </div>
-            <div class="filters__container">
-                <div class="categori">
-                    <p class="categori__tittle">Filtrar por: </p>
-                    <ul class="categori_list">
-                        <li class="item">Nike</li>
-                        <li class="item">Adidas</li>
-                        <li class="item">Puma</li>
-                    </ul>
+    <main class="main_container">
+        <div class="promotional">
+            <p class="promo first">ENVÍOS GRATIS CON COMPRAS SUPERIORES A $150.000</p>
+            <p class="promo second">BONO EN TU PRIMERA COMPRA DEL 20%</p>
+        </div>
+        <h1 class="title">TENIS Y ZAPATILLAS PARA HOMBRE</h1>
+        <section class="content">
+            <div class="content__filters">
+                <div class="filter__logo">
+                    <img src="./ASSET/filter.png" alt="logo filtro" class="filter__logo__img">
+                    <h2 class="filter__logo__title">FILTRAR</h2>
+                </div>
+                <div class="block__filter">
+                    <div class="block">
+                        <div class="block__header">
+                            <h3 class="block__title">TALLA</h3>
+                            <img src="./ASSET/add.png" alt="mas">
+                        </div>
+                        <div class="check">
+                            <div class="check__option">
+                                <input type="checkbox" name="l" id="l">
+                                <label for="l">L</label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="m" id="m">
+                                <label for="m">M</label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="s" id="s">
+                                <label for="s">S</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block__header">
+                            <h3 class="block__title">PRECIO</h3>
+                            <img src="./ASSET/add.png" alt="mas">
+                        </div>
+                        <div class="check">
+                            <div class="check__option">
+                                <input type="checkbox" name="100-500" id="100-500">
+                                <label for="100-500" id="100-500">100.000 - 500.000</label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="60-100" id="60-100">
+                                <label for="60-100">60.000 - 100.000 </label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="10-50" id="10-50">
+                                <label for="10-50"> 10.000 - 50.000 </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block__header">
+                            <h3 class="block__title">MARCA</h3>
+                            <img src="./ASSET/add.png" alt="mas">
+                        </div>
+                        <div class="check">
+                            <div class="check__option">
+                                <input type="checkbox" name="adidas" id="adidas">
+                                <label for="adidas">ADIDAS</label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="nike" id="nike">
+                                <label for="nike">NIKE</label>
+                            </div>
+                            <div class="check__option">
+                                <input type="checkbox" name="reebok" id="reebok">
+                                <label for="reebok">REEBOK</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button__filter">FILTRAR</button>
+                </div>
+                <div class="block__filtert__modal__background" id="modal_filter">
+                    <div class="block__filtert__modal">
+                        <img src="./ASSET/icon-close.svg" alt="Close" class="block__filtert__modal__img">
+                        <div class="block__modal">
+                            <div class="block__header">
+                                <h3 class="block__title">TALLA</h3>
+                                <img src="./ASSET/add.png" alt="mas">
+                            </div>
+                            <div class="check">
+                                <div class="check__option">
+                                    <input type="checkbox" name="l" id="l">
+                                    <label for="l">L</label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="m" id="m">
+                                    <label for="m">M</label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="s" id="s">
+                                    <label for="s">S</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__modal">
+                            <div class="block__header">
+                                <h3 class="block__title">PRECIO</h3>
+                                <img src="./ASSET/add.png" alt="mas">
+                            </div>
+                            <div class="check">
+                                <div class="check__option">
+                                    <input type="checkbox" name="100-500" id="100-500">
+                                    <label for="100-500" id="100-500">100.000 - 500.000</label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="60-100" id="60-100">
+                                    <label for="60-100">60.000 - 100.000 </label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="10-50" id="10-50">
+                                    <label for="10-50"> 10.000 - 50.000 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__modal">
+                            <div class="block__header">
+                                <h3 class="block__title">MARCA</h3>
+                                <img src="./ASSET/add.png" alt="mas">
+                            </div>
+                            <div class="check">
+                                <div class="check__option">
+                                    <input type="checkbox" name="adidas" id="adidas">
+                                    <label for="adidas">ADIDAS</label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="nike" id="nike">
+                                    <label for="nike">NIKE</label>
+                                </div>
+                                <div class="check__option">
+                                    <input type="checkbox" name="reebok" id="reebok">
+                                    <label for="reebok">REEBOK</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button__modal">FILTRAR</button>
+                    </div>
                 </div>
             </div>
+            <div class="content__data"></div>
         </section>
-    </main>-->
+    </main>
+    <footer></footer>
     <script src="./main.js"></script>
 </body>
 
