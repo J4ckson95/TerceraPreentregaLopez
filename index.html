@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header__navigation">
-            <img src="./ASSET/icon-menu.svg" alt="Menu hamburguesa" class="header__menu">
+            <img src="./ASSET/icon-menu.svg" alt="Menu hamburguesa" class="header__menu" id="icon_menu">
             <img src="./ASSET/logo.svg" alt="logo" class="header__logo">
             <nav class="navbar">
                 <ul class="navbar__list">
@@ -27,7 +27,7 @@
         </div>
         <div class="modal__navbar__background" id="modal_navbar">
             <nav class="modal__navbar">
-                <img src="./ASSET/icon-close.svg" alt="Close" class="modal__img__close">
+                <img src="./ASSET/icon-close.svg" alt="Close" class="modal__img__close" id="img_close">
                 <ul class="modal__navbar__list">
                     <!--! PENDIENTE LINKEAR LOS ENLACES-->
                     <li class="modal__list__item"><a class="link" href="#">Collections</a></li>
@@ -55,143 +55,137 @@
         <section class="content">
             <div class="content__filters">
                 <div class="filter__logo">
-                    <img src="./ASSET/filter.png" alt="logo filtro" class="filter__logo__img">
+                    <img src="./ASSET/filter.png" alt="logo filtro" class="filter__logo__img" id="logo_filter">
                     <h2 class="filter__logo__title">FILTRAR</h2>
                 </div>
                 <div class="block__filter">
                     <div class="block">
                         <div class="block__header">
                             <h3 class="block__title">TALLA</h3>
-                            <img src="./ASSET/add.png" alt="mas">
+                            <img src="./ASSET/add.png" alt="mas" class="img_add">
                         </div>
-                        <div class="check">
+                        <div class="check" id="size">
                             <div class="check__option">
-                                <input type="checkbox" name="l" id="l">
-                                <label for="l">L</label>
+                                <input type="checkbox" value="40" id="40" class="size">
+                                <label for="40">40</label>
                             </div>
                             <div class="check__option">
-                                <input type="checkbox" name="m" id="m">
-                                <label for="m">M</label>
+                                <input type="checkbox" value="39" id="39" class="size">
+                                <label for="39">39</label>
                             </div>
                             <div class="check__option">
-                                <input type="checkbox" name="s" id="s">
-                                <label for="s">S</label>
+                                <input type="checkbox" value="38" id="38" class="size">
+                                <label for="38">38</label>
                             </div>
                         </div>
                     </div>
                     <div class="block">
                         <div class="block__header">
                             <h3 class="block__title">PRECIO</h3>
-                            <img src="./ASSET/add.png" alt="mas">
+                            <img src="./ASSET/add.png" alt="mas" class="img_add">
                         </div>
-                        <div class="check">
+                        <div class=" check">
                             <div class="check__option">
-                                <input type="checkbox" name="100-500" id="100-500">
-                                <label for="100-500" id="100-500">100.000 - 500.000</label>
+                                <input type="checkbox" name="" id="MayorPrecio">
+                                <label for="MayorPrecio">Mayor Precio</label>
                             </div>
                             <div class="check__option">
-                                <input type="checkbox" name="60-100" id="60-100">
-                                <label for="60-100">60.000 - 100.000 </label>
-                            </div>
-                            <div class="check__option">
-                                <input type="checkbox" name="10-50" id="10-50">
-                                <label for="10-50"> 10.000 - 50.000 </label>
+                                <input type="checkbox" name="MenorPrecio" id="MenorPrecio">
+                                <label for="MenorPrecio">Menor Precio</label>
                             </div>
                         </div>
                     </div>
                     <div class="block">
                         <div class="block__header">
                             <h3 class="block__title">MARCA</h3>
-                            <img src="./ASSET/add.png" alt="mas">
+                            <img src="./ASSET/add.png" alt="mas" class="img_add">
                         </div>
-                        <div class="check">
+                        <div class=" check">
                             <div class="check__option">
-                                <input type="checkbox" name="adidas" id="adidas">
-                                <label for="adidas">ADIDAS</label>
+                                <input type="checkbox" name="ADIDAS" id="ADIDAS">
+                                <label for="ADIDAS">ADIDAS</label>
                             </div>
                             <div class="check__option">
-                                <input type="checkbox" name="nike" id="nike">
-                                <label for="nike">NIKE</label>
+                                <input type="checkbox" name="NIKE" id="NIKE">
+                                <label for="NIKE">NIKE</label>
                             </div>
                             <div class="check__option">
-                                <input type="checkbox" name="reebok" id="reebok">
-                                <label for="reebok">REEBOK</label>
+                                <input type="checkbox" name="WILSON" id="WILSON">
+                                <label for="WILSON">WILSON</label>
                             </div>
                         </div>
                     </div>
                     <button class="button__filter">FILTRAR</button>
                 </div>
                 <div class="block__filtert__modal__background" id="modal_filter">
-                    <div class="block__filtert__modal">
-                        <img src="./ASSET/icon-close.svg" alt="Close" class="block__filtert__modal__img">
+                    <form class="block__filtert__modal">
+                        <img src="./ASSET/icon-close.svg" alt="Close" class="block__filtert__modal__img"
+                            id="close_filter">
                         <div class="block__modal">
                             <div class="block__header">
                                 <h3 class="block__title">TALLA</h3>
-                                <img src="./ASSET/add.png" alt="mas">
+                                <img src="./ASSET/add.png" alt="mas" class="img_add">
                             </div>
                             <div class="check">
                                 <div class="check__option">
-                                    <input type="checkbox" name="l" id="l">
-                                    <label for="l">L</label>
+                                    <input type="checkbox" name="40" id="40">
+                                    <label for="40">40</label>
                                 </div>
                                 <div class="check__option">
-                                    <input type="checkbox" name="m" id="m">
-                                    <label for="m">M</label>
+                                    <input type="checkbox" name="39" id="39">
+                                    <label for="39">39</label>
                                 </div>
                                 <div class="check__option">
-                                    <input type="checkbox" name="s" id="s">
-                                    <label for="s">S</label>
+                                    <input type="checkbox" name="38" id="38">
+                                    <label for="38">38</label>
                                 </div>
                             </div>
                         </div>
                         <div class="block__modal">
                             <div class="block__header">
                                 <h3 class="block__title">PRECIO</h3>
-                                <img src="./ASSET/add.png" alt="mas">
+                                <img src="./ASSET/add.png" alt="mas" class="img_add">
                             </div>
                             <div class="check">
                                 <div class="check__option">
-                                    <input type="checkbox" name="100-500" id="100-500">
-                                    <label for="100-500" id="100-500">100.000 - 500.000</label>
+                                    <input type="checkbox" name="" id="MayorPrecio">
+                                    <label for="MayorPrecio">Mayor Precio</label>
                                 </div>
                                 <div class="check__option">
-                                    <input type="checkbox" name="60-100" id="60-100">
-                                    <label for="60-100">60.000 - 100.000 </label>
-                                </div>
-                                <div class="check__option">
-                                    <input type="checkbox" name="10-50" id="10-50">
-                                    <label for="10-50"> 10.000 - 50.000 </label>
+                                    <input type="checkbox" name="MenorPrecio" id="MenorPrecio">
+                                    <label for="MenorPrecio">Menor Precio</label>
                                 </div>
                             </div>
                         </div>
                         <div class="block__modal">
                             <div class="block__header">
                                 <h3 class="block__title">MARCA</h3>
-                                <img src="./ASSET/add.png" alt="mas">
+                                <img src="./ASSET/add.png" alt="mas" class="img_add">
                             </div>
                             <div class="check">
                                 <div class="check__option">
-                                    <input type="checkbox" name="adidas" id="adidas">
-                                    <label for="adidas">ADIDAS</label>
+                                    <input type="checkbox" name="ADIDAS" id="ADIDAS">
+                                    <label for="ADIDAS">ADIDAS</label>
                                 </div>
                                 <div class="check__option">
-                                    <input type="checkbox" name="nike" id="nike">
-                                    <label for="nike">NIKE</label>
+                                    <input type="checkbox" name="NIKE" id="NIKE">
+                                    <label for="NIKE">NIKE</label>
                                 </div>
                                 <div class="check__option">
-                                    <input type="checkbox" name="reebok" id="reebok">
-                                    <label for="reebok">REEBOK</label>
+                                    <input type="checkbox" name="WILSON" id="WILSON">
+                                    <label for="WILSON">WILSON</label>
                                 </div>
                             </div>
                         </div>
-                        <button class="button__modal">FILTRAR</button>
-                    </div>
+                        <button type="submit" class="button__filter__modal">FILTRAR</button>
+                    </form>
                 </div>
             </div>
-            <div class="content__data"></div>
+            <div class="content__data" id="store"></div>
         </section>
     </main>
     <footer></footer>
+    <script src="./navigation.js"></script>
     <script src="./main.js"></script>
 </body>
 
