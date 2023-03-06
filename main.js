@@ -90,17 +90,16 @@ function cargainicial() {
 const renderProductos = () => {
     const store = document.getElementById("store");
     const buttons = document.querySelectorAll("button");
+    let filter
 
     buttons.forEach((item, i) => {
         buttons[i].addEventListener("click", () => {
             let activo = document.getElementsByClassName("activo");
             console.log(activo[0].attributes.id);
             if (activo[0].attributes.id.nodeValue == "size") {
-                let filter
-                let checks = document.getElementsByClassName("size");
-                checks.forEach((e) => {
-                    if (e.checked) filter = e.value;
-                    console.log(filter);
+                let checks = [...document.getElementsByClassName("size")];
+                checks.forEach((item, i) => {
+                    if (item.checked) filter = item.value;
                 })
             }
 
