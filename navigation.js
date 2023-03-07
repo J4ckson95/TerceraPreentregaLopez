@@ -30,14 +30,19 @@ close_filter.addEventListener(("click"), () => {
 //--------------------------------------------------------------//
 const img_add = document.querySelectorAll(".img_add")
 const filter_option = document.querySelectorAll(".check")
+let cont = 0;
 
 img_add.forEach((item, i) => {
     img_add[i].addEventListener(("click"), (e) => {
-        e.explicitOriginalTarget.attributes[0].nodeValue = "./ASSET/less.png";
-        filter_option.forEach((bloque, i) => {
+        if (cont === 0) {
+            e.explicitOriginalTarget.attributes[0].nodeValue = "./ASSET/less.png";
+            cont++;
+            filter_option[i].classList.add("activo");
+        } else {
+            e.explicitOriginalTarget.attributes[0].nodeValue = "./ASSET/add.png";
+            cont = 0;
             filter_option[i].classList.remove("activo");
-        });
-        filter_option[i].classList.add("activo");
+        }
     });
 });
 
